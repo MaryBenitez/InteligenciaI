@@ -1,0 +1,115 @@
+/* Coded with love by Mutiullah Samim */
+		body,
+		html {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			background: #121E35 !important;
+		}
+		.user_card {
+			height: 400px;
+			width: 350px;
+			margin-top: auto;
+			margin-bottom: auto;
+			background: #77d4b0;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			padding: 10px;
+			box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 150), 0 6px 20px 0 rgba(100, 100, 100, 100);
+			-webkit-box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 150), 0 6px 20px 0 rgba(100, 100, 100, 100);
+			-moz-box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 150), 0 6px 20px 0 rgba(100, 100, 100, 100);
+			border-radius: 5px;
+		}
+		.user_b {
+			margin-top: auto;
+			margin-bottom: auto;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			padding: 10px;
+		}
+		.brand_logo_container {
+			position: absolute;
+			height: 170px;
+			width: 170px;
+			top: -75px;
+			border-radius: 50%;
+			background: #121E35;
+			padding: 10px;
+			text-align: center;
+		}
+		.form_container {
+			margin-top: 100px;
+		}
+		.login_btn {
+			width: 100%;
+			background: #121E35 !important;
+			color: white !important;
+		}
+		.login_btn:focus {
+			box-shadow: none !important;
+			outline: 0px !important;
+		}
+		.formulario_container {
+			padding: 0 2rem;
+		}
+		.input-group-text {
+			background: #121E35 !important;
+			color: white !important;
+			border: 0 !important;
+			border-radius: 0.25rem 0 0 0.25rem !important;
+		}
+		.input_red,
+		.input_pass:focus {
+			box-shadow: none !important;
+			outline: 0px !important;
+		}
+		.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+			background-color: #121E35 !important;
+		}
+		.brand_logo {
+			height: 150px;
+			width: 150px;
+			border-radius: 50%;
+			border: 5px solid #77d4b0;
+		}
+:root {
+		--color-green: #77d4b0;
+		--color-red: #fe5e41;
+		--color-button: #fdffff;
+		--color-black: #000;
+	}
+	.switch-button {
+		display: inline-block;
+	}
+	.switch-button .switch-button__checkbox {
+		display: none;
+	}
+	.switch-button .switch-button__label {
+		background-color: var(--color-red);
+		width: 5rem;
+		height: 3rem;
+		border-radius: 3rem;
+		display: inline-block;
+		position: relative;
+	}
+	.switch-button .switch-button__label:before {
+		transition: .2s;
+		display: block;
+		position: absolute;
+		width: 3rem;
+		height: 3rem;
+		background-color: var(--color-button);
+		content: '';
+		border-radius: 50%;
+		box-shadow: inset 0px 0px 0px 1px var(--color-black);
+	}
+	.switch-button .switch-button__checkbox:checked + .switch-button__label {
+		background-color: var(--color-green);
+	}
+	.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+		transform: translateX(2rem);
+	}
